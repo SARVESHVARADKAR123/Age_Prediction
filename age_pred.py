@@ -38,4 +38,4 @@ def predict_age(image_path):
 
 # Example usage
 if __name__ == "__main__":
-    predict_age('image.jpg')
+    predict_age('photo.jpg')
