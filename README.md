@@ -37,8 +37,8 @@ This project fine-tunes a pre-trained CNN model (MobileNetV2) for age detection 
 
 ## Resources
 - **Google Drive Links:**
-  - **Trained Model (.keras):** [Download Here](#)
-  - **Colab Notebook:** [Open Here](#)
-  - **Dataset (UTKFace):** [Download Here](#)
-  - **Pre-trained Weights:** [Download Here](#)
+  - **Trained Model (.keras):** [Download Here](https://drive.google.com/file/d/1idrrFDUTuYforM5WHzP4_b4mnG7-ILKv/view?usp=drive_link)
+  - **Colab Notebook:** [Open Here](https://colab.research.google.com/drive/13euswQlPrZcYFMMRkTvq20RrDW2GP7Sj?usp=drive_link)
+  - **Dataset (UTKFace):** [Download Here](https://www.kaggle.com/datasets/jangedoo/utkface-new)
+  - **Pre-trained Weights:** [Download Here](https://drive.google.com/file/d/1Jr8JuI5QsZM9qYd12WUEV3anbTlhtunG/view?usp=drive_link)
 
