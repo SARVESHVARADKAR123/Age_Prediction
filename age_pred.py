@@ -3,7 +3,7 @@ import numpy as np
 from keras.models import load_model
 
 # Load the pre-trained age prediction model
-model = load_model('age_prediction_model.keras')
+model = load_model('age_regression_model.keras')
 
 # Load the Haar cascade for face detection
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -17,9 +17,9 @@ def predict_age(image_path):
     faces = face_cascade.detectMultiScale(gray, 1.1, 4)
 
     for (x, y, w, h) in faces:
-        # Extract the face region
+    # Extract the face region
         face = img[y:y+h, x:x+w]
-        face = cv2.resize(face, (224, 224))  # Resize to the input size of the model
+        face = cv2.resize(face, (128, 128))  # Change to 128x128
         face = face / 255.0  # Normalize the image
         face = np.expand_dims(face, axis=0)  # Add batch dimension
 
@@ -38,4 +38,4 @@ def predict_age(image_path):
 
 # Example usage
 if __name__ == "__main__":
-    predict_age('photo.jpg')
+    predict_age('image.jpg')
